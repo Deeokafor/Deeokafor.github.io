@@ -1,0 +1,307 @@
+/*general styling*/
+*{
+    margin: 0;
+    padding: 0;
+	color: #fff;
+	border: 0px solid yellow;
+}
+
+html, body{
+    font-family: Segoe UI;
+    height: 100%;
+	background: linear-gradient(165deg, #060E19 50%, #19050C);
+	background-repeat: no-repeat;
+}
+
+section{
+	padding: 10px 0px;
+}
+
+/*@media screen and (max-width: 768px){
+	body{
+		margin: 0;
+		padding: 0;
+		background-repeat: no-repeat;
+		height: auto;
+	}
+	
+	section {
+		border-bottom: 1px solid #19050C;
+		padding: 30px 0px;
+	}
+	
+	div{
+		display: block;
+		width: 100%
+	}
+	
+	.projects-wrapper div{
+	width: 30%;
+	display: block;
+	height: 200px;
+	margin: 10px 10px;
+	background: linear-gradient(rgba(6, 14, 25, 0.1),rgba(6, 14, 25, 0.9)), url('../images/1_SGLo79qdNti7vhAtLjkDEg.png');
+	background-position: center;
+	background-size: 110% 128%;
+	background-repeat: no-repeat;
+	transition-duration: 100ms;
+    transition-timing-function: linear;
+	}
+}*/
+/*general styling*/
+
+/*styling for nav bar*/
+#navigation{
+	border: 0px solid red;
+	height: 50px;
+	display: block;
+	width: 100%;
+	font-family: consolas;	
+}
+
+#navigation nav ul li{
+	border: 0px solid red;
+	height: 50px;
+	display: block;
+	width: 100px;
+	text-align: center;
+	list-style: none;
+	float: left;
+	font-weight: 500;
+	text-transform: uppercase;
+	position: relative;
+}
+
+#navigation nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	width: 100%;
+	line-height: 46px;
+	font-size: 13px;
+	border: 0px solid red;
+	font-family: Century Gothic;
+}
+
+#navigation nav ul li  ul{
+	display: none;
+	position: absolute;
+	background-color: rgb(0, 0, 0, 0.95);
+	z-index: 1000;
+	/*border-top: 5px solid #A61548;*/
+	width: 100px;
+}
+#navigation nav ul li:hover ul{
+	display: block;
+}
+
+#navigation nav ul li div{
+	display: none;
+	position: absolute;
+	background-color: rgb(0, 0, 0, 0.95);
+	z-index: 1000;
+	border-top: 5px solid #A61548;
+	width: 200px;
+	left: 5px;
+	padding: 14px;
+	text-transform: none;
+	border-radius: 0px 0px 6px 6px;
+	text-align: justify;
+}
+
+#navigation nav ul li:hover div{
+	display: block;
+}
+/*styling for nav bar*/
+
+/*styling for intro*/
+#intro > h1{
+	font-weight: bold;
+	font-family: Century Gothic;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+#intro > p{
+	;
+	text-transform: uppercase;
+}
+
+#intro{
+	font-family: Century Gothic;
+	font-size: 15px;
+	text-align: normal;
+}
+
+.special{
+	color: #AA003B;
+}
+
+
+#sendmail-wrapper{
+	position: ;
+	top: ;
+	background-color: #01010F;
+	width: 200px;
+	height: 50px;
+	border-radius: 4px;
+	margin: 30px 0px 10px 0px;
+	text-align: center;
+	transition: border 1s;
+}
+
+#sendmail-wrapper:hover{
+	border-bottom: 3px solid #A61548;
+	transition-timing-function: ease-in;
+}
+
+
+#sendmail > a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	font-family: Century Gothic;
+	padding: 11px 0px 11px 20px;
+	line-height: 50px;
+}
+
+#sendmail-wrapper div{
+	display: inline-block;
+}
+
+#sendmail-wrapper img{
+	width: 24px;
+}
+
+#sendmail-img > a{
+	padding: 0px 15px 0px 0px;
+	line-height: 50px;
+}
+/*styling for intro*/
+
+/*styling for projects*/
+div.project{
+	/*border: 10px solid red;*/
+    /*box-shadow: 0px 5px 10px 0px rgb(128, 128, 128, 0.9);*/
+    border-radius: 4px;
+    /*padding: 24px;*/
+}
+
+.projects-wrapper{
+	width: 100%;
+	position: ;
+	border: 0px solid red;
+	padding: 10px 20px;
+	top: ;
+	text-align: center;
+}
+
+.projects-wrapper div a{
+	display: block;
+	width: 100%;
+	height: inherit;
+}
+
+.projects-wrapper div:nth-child(1){
+	width: 30%;
+	display: inline-block;
+	height: 200px;
+	margin: 10px 10px;
+	background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.9)), url('../images/background1.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition-duration: 100ms;
+    transition-timing-function: linear;
+}
+
+.projects-wrapper div:nth-child(2){
+	width: 30%;
+	display: inline-block;
+	height: 200px;
+	margin: 10px 10px;
+	background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.9)), url('../images/background2.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition-duration: 100ms;
+    transition-timing-function: linear;
+}
+
+.projects-wrapper div:nth-child(3){
+	width: 30%;
+	display: inline-block;
+	height: 200px;
+	margin: 10px 10px;
+	background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5)), url('../images/');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition-duration: 100ms;
+    transition-timing-function: linear;
+}
+
+.projects-wrapper div:nth-child(1):hover{
+	transform: scale(1.1, 1.1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)), url("../images/background1.jpg");
+    background-position: center;
+	background-size: cover;
+}
+
+.projects-wrapper div:nth-child(2):hover{
+	transform: scale(1.1, 1.1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)), url("../images/background2.jpg");
+    background-position: center;
+	background-size: cover;
+}
+
+.projects-wrapper div:nth-child(3):hover{
+	transform: scale(1.1, 1.1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url("../images/background.jpg");
+    background-position: ;
+	background-size: cover;
+}
+/*styling for projects*/
+
+/*styling for footer images*/
+footer .center div div img{
+	width: 20px;
+	border: 0px solid gold;
+}
+
+footer .center div div{
+	display: inline-block;
+	width: 60px;
+	padding: 15px 0px;
+	border: 0px solid orange; 
+}
+
+footer .center div{
+	/*margin: auto;*/
+	border: 0px solid green;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 11px;
+	color: #A61548;
+	font-weight: 700;
+	padding: 5px 0px;
+}
+
+ footer .center{
+	width: 80%;
+	margin: auto;
+	border: 0px solid red;
+}
+
+footer{
+	width: 100%;
+	border: 0px solid blue;
+	position: ;
+	top: ;
+	font-family: Century Gothic;
+}
+
+/*styling for footer images*/
