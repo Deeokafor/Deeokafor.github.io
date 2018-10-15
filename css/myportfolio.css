@@ -17,7 +17,13 @@ section{
 	padding: 10px 0px;
 }
 
-/*@media screen and (max-width: 768px){
+
+
+@media screen and (max-width: 768px){
+	*{
+		box-sizing: border-box;
+	}
+	
 	body{
 		margin: 0;
 		padding: 0;
@@ -30,24 +36,13 @@ section{
 		padding: 30px 0px;
 	}
 	
-	div{
-		display: block;
-		width: 100%
-	}
-	
 	.projects-wrapper div{
-	width: 30%;
-	display: block;
-	height: 200px;
-	margin: 10px 10px;
-	background: linear-gradient(rgba(6, 14, 25, 0.1),rgba(6, 14, 25, 0.9)), url('../images/1_SGLo79qdNti7vhAtLjkDEg.png');
-	background-position: center;
-	background-size: 110% 128%;
-	background-repeat: no-repeat;
-	transition-duration: 100ms;
-    transition-timing-function: linear;
+		display: flex;
+		width: 100%;
+		box-sizing: border-box;
+		flex-grow: 1;
 	}
-}*/
+}
 /*general styling*/
 
 /*styling for nav bar*/
@@ -101,12 +96,13 @@ section{
 	background-color: rgb(0, 0, 0, 0.95);
 	z-index: 1000;
 	border-top: 5px solid #A61548;
-	width: 200px;
-	left: 5px;
+	width: 150px;
+	left: -30px;
 	padding: 14px;
 	text-transform: none;
 	border-radius: 0px 0px 6px 6px;
-	text-align: justify;
+	text-align: center;
+	font-size: 11px;
 }
 
 #navigation nav ul li:hover div{
@@ -188,6 +184,7 @@ div.project{
 }
 
 .projects-wrapper{
+	display: flex;
 	width: 100%;
 	position: ;
 	border: 0px solid red;
@@ -207,7 +204,7 @@ div.project{
 	display: inline-block;
 	height: 200px;
 	margin: 10px 10px;
-	background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.9)), url('../images/background1.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url('../images/background1.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -220,7 +217,7 @@ div.project{
 	display: inline-block;
 	height: 200px;
 	margin: 10px 10px;
-	background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.9)), url('../images/background2.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url('../images/project.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -233,7 +230,7 @@ div.project{
 	display: inline-block;
 	height: 200px;
 	margin: 10px 10px;
-	background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5)), url('../images/');
+	background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url('../images/project.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -252,7 +249,7 @@ div.project{
 .projects-wrapper div:nth-child(2):hover{
 	transform: scale(1.1, 1.1);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.9);
-    background: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)), url("../images/background2.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0)), url("../images/project.png");
     background-position: center;
 	background-size: cover;
 }
@@ -260,8 +257,8 @@ div.project{
 .projects-wrapper div:nth-child(3):hover{
 	transform: scale(1.1, 1.1);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.9);
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url("../images/background.jpg");
-    background-position: ;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url("../images/project.png");
+    background-position: center;
 	background-size: cover;
 }
 /*styling for projects*/
