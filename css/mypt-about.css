@@ -1,0 +1,40 @@
+*{
+    font-family: 'Century Gothic';
+}
+
+.about-wrapper{
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 6px;
+    margin: 80px 0px;
+    transition: box-shadow 0.5s;
+}
+
+.about-wrapper:hover{
+    box-shadow: 2px 3px 10px 2px rgb(0, 0, 0, 0.25);
+}
+
+h1{
+    border-bottom: 4px solid rgb(104, 2, 37);
+    padding: 15px;
+    background-color: rgb(104, 2, 37, 0.1);
+    color: rgb(155, 4, 56);
+    text-shadow: 1px 2px 5px rgb(0, 0, 0, 1);
+    font-weight: 900;
+}
+
+p{
+    padding: 24px;
+    text-align: justify;
+}
+
+p a{
+    color: rgb(184, 5, 67);
+    text-shadow: 1px 2px 5px rgb(0, 0, 0, 0.9);
+    font-size: 16px; 
+}
+
+p a:hover{
+    text-decoration: none;
+    color: rgb(236, 0, 83);
+    }
+}

@@ -1,0 +1,62 @@
+#center{
+    width: 80%;
+    margin: auto;
+    border: 0px solid red;
+    padding: 24px;
+}
+
+center{
+    font-family: 'Century Gothic';
+    font-size: 3em;
+    font-weight: bold;
+    border: 0px solid red;
+}
+
+#smiley-face{
+    display: block;
+    width: 300px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    transform: rotate(90deg);
+    animation-name: sway;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes sway{
+    0%{
+        transform: rotate(90deg);
+    }
+    25%{
+        transform: rotate(135deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+a{
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+    padding: 10px 24px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+}
+
+a:hover{
+    background: white;
+    color: rgb(14, 14, 32);
+    text-decoration: none;
+}
+
+a:active{
+    background: rgb(218, 216, 216);
+}
+
