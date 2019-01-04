@@ -3,13 +3,16 @@
     margin: 0;
     padding: 0;
 	color: #fff;
+	font-family: 'Century Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	border: 0px solid yellow;
 }
 
 html, body{
-	background: linear-gradient(165deg, #060E19 10%, #19050C);
+	background-image: linear-gradient(165deg, #060E19 10%, #19050C);
 	background-repeat: no-repeat;
-	height: 100%;
+	background-size: contain;
+	background-position: center center;
+	min-height: 100%;
 }
 
 section{
@@ -21,7 +24,6 @@ section{
 #navigation{
 	border: 0px solid red;
 	height: 50px;
-	display: block;
 	width: 100%;
 	font-family: consolas;	
 }
@@ -34,9 +36,7 @@ section{
 	text-align: center;
 	list-style-type: none;
 	float: left;
-	font-weight: 500;
 	text-transform: uppercase;
-	transition: border 100ms;
 }
 
 #navigation nav ul li a{
@@ -44,21 +44,24 @@ section{
 	text-decoration: none;
 	color: #fff;
 	width: 100%;
-	line-height: 50px;
+	line-height: 43px;
 	font-size: 13px;
 	border: 0px solid red;
-	font-family: 'Century Gothic';
+}
+
+#navigation nav ul li a:hover{
+	border-bottom: 5px solid rgb(163, 12, 65);
+	background-color: rgb(166, 21, 72, 0.25);
+	color: rgb(255, 0, 89);
+	text-shadow: 1px 2px 5px rgb(0, 0, 0);
+	transition: 9ms;
+	transition: 200ms;
 }
 
 #navigation nav ul li a:active{
-	background-color: rgb(166, 21, 72, 0.25);
-	color: rgb(166, 21, 72);
-	transition-duration: 3ms;
+	background-color: rgba(105, 3, 39, 0.1);
 }
 
-#navigation nav ul li:hover{
-	border-bottom: 4px solid #A61548;
-}
 
 /*@keyframes changeBorderBottom{
 	from{
@@ -74,19 +77,15 @@ section{
 /*styling for intro*/
 #intro > h1{
 	font-weight: bold;
-	font-family: Century Gothic;
 	font-size: 35px;
-	text-transform: uppercase;
 }
 
-#intro > p{
-	text-transform: uppercase;
-}
 
 #intro{
-	font-family: Century Gothic;
 	font-size: 15px;
 	text-align: normal;
+	text-transform: uppercase;
+	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 .special{
@@ -100,42 +99,62 @@ section{
 	height: 50px;
 	border-radius: 4px;
 	margin: 30px 0px 10px 0px;
-	text-align: center;
+	border: 0px solid grey;
 }
 
 #sendmail-wrapper:hover{
-	font-weight: bold;
 	border-left: 5px solid #A61548;
 	border-right: 5px solid #A61548;
 	transition-timing-function: ease-in;
-	transition: border 0.3s;
+	transition: all 0.3s;
+	background-color: rgb(122, 7, 47, 0.15);
 	
 }
 
-#sendmail > a{
-	text-decoration: none;
-	color: #fff;
-	font-weight: 500;
-	font-family: Century Gothic;
-	padding: 11px 0px 11px 20px;
-	line-height: 50px;
+#sendmail{
+	border: 0px solid red;
+	text-align: center;
+	margin: auto;
+	height: 50px;
 }
 
-#sendmail-wrapper div{
-	display: inline-block;
+#sendmail a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 50px;
+	padding: 14px 13px;
+	border: 0px solid green;
+}
+
+#sendmail a img{
+	padding-left: 3px;
 }
 
 #sendmail-wrapper img{
 	width: 24px;
 }
-
-#sendmail-img > a{
-	padding: 0px 15px 0px 0px;
-	line-height: 50px;
-}
 /*styling for intro*/
 
 /*styling for projects*/
+.row{
+	border: 0px solid red;
+}
+
+#projects-background{
+	background-color: rgb(0, 0, 0, 0.3);
+	padding: 0px 0px 24px 0px;
+	border: 0px solid red;
+}
+
+#projects-background > h2{
+	color: #A61548;
+	background-color: rgb(166, 21, 72, 0.1);
+	font-weight: 1000;
+	text-shadow: 0px 2px 3px black;
+	border-bottom: 3px solid #A61548;
+}
+
 div.pp{
 	width: 100%;
 	height: 200px;
@@ -187,11 +206,11 @@ div.pp{
 }
 
 .project3{
-	background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url('../images/project.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)), url('../images/bmi.png');
 }
 
 .project3:hover{
-	background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2)), url('../images/project.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.2)), url('../images/bmi.png');
 	background-position: center;
 	background-size: cover;
 }
@@ -225,7 +244,6 @@ footer .center div{
 	font-size: 12px;
 	color: #A61548;
 	padding: 5px 0px;
-	font-family: 'Century Gothic', 'Courier New', Courier;
 	letter-spacing: 1px;
 }
 
@@ -244,7 +262,7 @@ footer{
 
 /* media queries */
 
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
 	
 	body{
 		margin: 0;
